@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <RelativeLayout
+       android:id="@+id/bar"
+       android:background="@color/colorPrimary"
+       android:layout_width="match_parent"
+       android:layout_height="48dp">
+       <ImageView
+           android:layout_width="48dp"
+           android:layout_height="48dp"
+           android:id="@+id/user"
+          android:layout_marginRight="10dp"
+           android:layout_alignParentRight="true"
+            android:src="@drawable/af0"
+           />
+       <ImageView
+           android:layout_width="48dp"
+           android:layout_height="48dp"
+           android:id="@+id/search_iv"
+           android:padding="10dp"
+           android:layout_marginRight="15dp"
+           android:layout_toLeftOf="@+id/user"
+           android:src="@drawable/af1"
+           />
+       <android.support.design.widget.TabLayout
+           android:layout_toLeftOf="@+id/search_iv"
+           android:id="@+id/tab_layout"
+          android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="?attr/actionBarSize"
+           app:tabGravity="fill"
+           app:tabIndicatorColor="@color/colorWhite"
+           app:tabMode="scrollable"
+           app:tabTextColor="@color/colorGray"
+           app:tabSelectedTextColor="@color/colorWhite">
+
+       </android.support.design.widget.TabLayout>
+   </RelativeLayout>
+
+    <com.example.asus.news.MyViewPager
+        android:layout_below="@+id/bar"
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </com.example.asus.news.MyViewPager>
+</RelativeLayout>

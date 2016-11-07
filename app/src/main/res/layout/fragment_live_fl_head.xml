@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/viewpager">
+
+    </android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:id="@+id/dot_layout"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_alignBottom="@+id/viewpager"
+        ></LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/titles"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="5dp"
+        />
+    <ImageView
+        android:layout_toRightOf="@+id/titles"
+        android:id="@+id/iv_type"
+        android:layout_width="56dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+         android:layout_toLeftOf="@+id/dot_layout"
+        android:src="@drawable/night_a5y"
+        />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/play_right"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#02000000"
+        >
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+               android:layout_width="24dp"
+               android:layout_height="24dp"
+               android:layout_centerVertical="true"
+               android:padding="4dp"
+               android:id="@+id/play"
+               android:layout_alignParentRight="true"
+               android:src="@drawable/night_a9e"/>
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/titleViewpager"
+
+               android:layout_margin="4dp"
+                android:layout_toLeftOf="@+id/count"
+                android:layout_toRightOf="@+id/type"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:gravity="center"
+                android:background="#22000000"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="预告"
+                android:textColor="#6060FF"
+                android:textSize="15dp"
+                android:id="@+id/type"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textColor="#EC4D4A"
+                android:id="@+id/count"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_alignTop="@+id/play"
+                android:layout_toLeftOf="@+id/play"
+                android:layout_toStartOf="@+id/play" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

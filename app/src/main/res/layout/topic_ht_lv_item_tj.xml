@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="15dp"
+    android:gravity="center"
+    >
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<ImageView
+
+    android:layout_width="24dp"
+    android:layout_height="48dp"
+    android:padding="5dp"
+    android:layout_marginLeft="10dp"
+    android:src="@drawable/tf"
+    />
+        <TextView
+            android:layout_marginLeft="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:id="@+id/title"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/title"
+            android:background="@color/colorGray"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            ></View>
+        <LinearLayout
+            android:layout_marginBottom="15dp"
+            android:layout_below="@+id/title"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+         <LinearLayout
+             android:layout_width="0dp"
+             android:orientation="vertical"
+             android:layout_gravity="center"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             >
+             <com.facebook.drawee.view.SimpleDraweeView
+                 android:layout_width="80dp"
+                 android:layout_height="80dp"
+                 android:id="@+id/face1"
+                android:layout_gravity="center"
+
+                 app:roundAsCircle="true"
+                 app:roundedCornerRadius="20dp"
+                 android:scaleType="centerCrop"
+                 />
+             <TextView
+                 android:layout_width="80dp"
+                 android:layout_height="30dp"
+                 android:gravity="center"
+                 android:textStyle="bold"
+                 android:textSize="20dp"
+
+                 android:id="@+id/name1"
+                 />
+             <TextView
+                 android:gravity="center"
+                 android:textColor="@color/colorGray"
+                 android:layout_width="80dp"
+                 android:layout_height="30dp"
+                 android:id="@+id/count1"/>
+
+         </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/face2"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+
+                    app:roundAsCircle="true"
+                    app:roundedCornerRadius="20dp"
+                    />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+
+                    android:id="@+id/name2"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/colorGray"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/count2"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/face3"
+
+                    app:roundAsCircle="true"
+                    app:roundedCornerRadius="20dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    />
+
+                <TextView
+                    android:layout_width="77dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+
+                    android:id="@+id/name3"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/colorGray"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/count3"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/face4"
+
+                    app:roundAsCircle="true"
+                    app:roundedCornerRadius="20dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+
+                    android:id="@+id/name4"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/colorGray"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/count4"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+</RelativeLayout>

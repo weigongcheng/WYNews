@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#05000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:layout_marginLeft="12dp"
+            android:text="切换栏目"/>
+        <ImageView
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="12dp"
+            android:src="@drawable/up"
+            android:layout_alignParentRight="true"
+              android:id="@+id/close_more"
+            />
+    </RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#05000000"
+    android:id="@+id/scrollView"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#05000000"
+        android:orientation="vertical"
+        >
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:background="@color/colorWhite"
+      android:orientation="vertical"
+      android:layout_below="@id/close_more"
+      android:layout_height="wrap_content">
+      <com.google.android.flexbox.FlexboxLayout
+          android:id="@+id/already_exists_fb"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:flexWrap="wrap">
+
+      </com.google.android.flexbox.FlexboxLayout>
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="30dp"
+         android:layout_below="@+id/already_exists_fb"
+         android:layout_alignParentRight="true"
+         android:gravity="center"
+         android:text="长按排序或者删除"/>
+  </RelativeLayout>
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_below="@id/already_exists_fb"
+            android:gravity="center"
+            android:text="点击添加更多栏目" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/more_fb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv2"
+            app:flexWrap="wrap">
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>
